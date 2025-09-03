@@ -121,19 +121,7 @@ limitations under the License.
 									<goal>references</goal>
 								</goals>
 							</execution>
-
-							<!--
-
-
-							<execution>
-								<id>create-config-targetserver</id>
-								<phase>install</phase>                        
-								<goals>
-									<goal>targetservers</goal>
-								</goals>
-							</execution>
-							-->
-							<execution>
+					
 								<id>create-config-apiproduct</id>
 								<phase>install</phase>                        
 								<goals>
@@ -175,6 +163,14 @@ limitations under the License.
 									<goal>userroles</goal>
 								</goals>
 							</execution>
+									<execution>
+								<id>create-config-targetserver</id>
+								<phase>install</phase>                        
+								<goals>
+									<goal>targetservers</goal>
+								</goals>
+							</execution>
+							<execution>
 							<execution> 
 								<id>import-keys</id>
 								<phase>install</phase>
