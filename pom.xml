@@ -201,13 +201,6 @@ limitations under the License.
 								</goals>
 							</execution>
 							<execution>
-								<id>create-config-targetserver</id>
-								<phase>install</phase>                        
-								<goals>
-									<goal>targetservers</goal>
-								</goals>
-							</execution>
-							<execution>
 								<id>create-config-kvm</id>
 								<phase>install</phase>                        
 								<goals>
