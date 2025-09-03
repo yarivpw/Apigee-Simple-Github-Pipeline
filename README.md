@@ -2,7 +2,7 @@
 
 # Apigee-Simple-Github-Pipeline
 
-**Tdhis is not an official Google product.**<BR>This implementation is not an official Google product, nor is it part of an official Google product. Support is available on a best-effort basis via GitHub.
+**Tadhis is not an official Google product.**<BR>This implementation is not an official Google product, nor is it part of an official Google product. Support is available on a best-effort basis via GitHub.
 
 ***
   
