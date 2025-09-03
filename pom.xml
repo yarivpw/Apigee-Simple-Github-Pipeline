@@ -15,8 +15,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -121,7 +119,14 @@ limitations under the License.
 									<goal>references</goal>
 								</goals>
 							</execution>
-					     	<execution>
+							<execution>
+								<id>create-config-targetserver</id>
+								<phase>install</phase>                        
+								<goals>
+									<goal>targetservers</goal>
+								</goals>
+							</execution>
+							<execution>
 								<id>create-config-apiproduct</id>
 								<phase>install</phase>                        
 								<goals>
@@ -175,6 +180,8 @@ limitations under the License.
 				</plugins>
 			</build>
 		</profile>
+
+
 		<profile>
 			<!-- Next Generation SaaS and hybrid -->
 			<id>googleapi</id>
@@ -198,6 +205,13 @@ limitations under the License.
 								<phase>install</phase>                        
 								<goals>
 									<goal>references</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>create-config-targetserver</id>
+								<phase>install</phase>                        
+								<goals>
+									<goal>targetservers</goal>
 								</goals>
 							</execution>
 							<execution>
